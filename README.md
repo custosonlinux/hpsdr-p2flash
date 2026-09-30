@@ -17,6 +17,11 @@ a small GUI.
 > the jumper (2400 blocks, radio checksum `0xc0ee` matched the file). Other boards
 > are untested, so keep the bootloader (jumper) method at hand as a fallback.
 
+![p2flash GUI after a successful update](docs/gui.png)
+
+*The GUI after a complete update run against the included simulator (`p2sim.py`), which
+is why the address is 127.0.0.1.*
+
 ## Why
 
 Once a radio runs Protocol 2 firmware, the FPGA itself can erase and reprogram its

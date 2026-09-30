@@ -361,7 +361,10 @@ class App:
 def main(target=None, path=None):
     root = tk.Tk()
     if sys.platform.startswith("linux"):
-        ttk.Style().theme_use("clam")     # the default Tk theme looks dated on Linux
+        style = ttk.Style()
+        style.theme_use("clam")           # the default Tk theme looks dated on Linux
+        # clam draws the bar almost in the trough colour, so a full bar looks empty
+        style.configure("Horizontal.TProgressbar", background="#3b7dd8")
     App(root, target, path)
     root.mainloop()
     return 0
