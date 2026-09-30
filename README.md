@@ -12,8 +12,10 @@ a small GUI.
   Python standard library
 
 > **Status:** version 0.1.0 has been tested against the included simulator, which is
-> modelled on the HermesC10 FPGA source code. It has **not yet been tested on real
-> hardware**. Until it has, keep the bootloader (jumper) method at hand as a fallback.
+> modelled on the HermesC10 FPGA source code, and **on real hardware**: an ANAN-G2E
+> (HermesC10 Mk2PA) was updated from firmware 11.0.5 to 11.0.10 over the LAN, without
+> the jumper (2400 blocks, radio checksum `0xc0ee` matched the file). Other boards
+> are untested, so keep the bootloader (jumper) method at hand as a fallback.
 
 ## Why
 
